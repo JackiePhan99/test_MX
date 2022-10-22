@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Finlandica, sans-serif;
+}
+
+#main {
+	width: 1213px;
+	height: 830px;
+	padding: 100px;
+	margin: 0 auto;
+}
+
+.logo {
+	margin-bottom: 15px;
+}
+
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 75px;
+}
+
+.input {
+	background: url(images/Frame.png) no-repeat;
+	background-position: 0 50%;
+	padding: 12px;
+	width: 300px;
+	padding-left: 40px;
+	border: 2px solid #DDE2F1;
+	border-radius: 2px;
+}
+
+.option {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.sub_option {
+	border: none;
+	outline: none;
+	background-color: #fff;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.add_users {
+	background-color: #849FFF;
+	border-radius: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #fff;
+	transition: .3s ease-in-out;
+}
+
+.add_users:hover {
+	background-color: rgb(174, 45, 45);
+	color: white;
+}
+
+.users {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.users_box {
+	padding: 10px;
+	padding-top: 20px;
+	margin-bottom: 15px;
+	width: 330px;
+	height: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: #FBFCFF;
+	border-radius: 10px;
+	transition: .3s ease-in-out;
+	transform: translateY(0px) scale(1);
+}
+
+.users_box:hover {
+	transform: translateY(-10px) scale(1.02);
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.user_title {
+	width: 170px;
+}
+
+.user_img {
+	margin-left: 0;
+	width: 100px;
+	height: 100px;
+}
+
+.user_name {
+	padding-top: 15px;
+	font-size: 21px;
+}
+
+.user_sub-name {
+	padding-top: 7px;
+	padding-bottom: 10px;
+	font-size: 15px;
+}
+
+.user_btn {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+.btn {
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #849FFF;
+	background-color: #fff;
+	border: 1px solid #849FFF;
+	border-radius: 10px;
+	transition: .3s ease-in-out;
+}
+
+
+.btn:hover {
+	background-color: rgb(174, 45, 45);
+	color: white;
+}
