@@ -1,3 +1,5 @@
+//bài 2
+
 // let N = prompt('')
 // N = parseInt(N)
 // for (i = 0; i < N; i++) {
@@ -7,6 +9,9 @@
 // 	document.writeln("<br/>")
 // }
 
+
+
+//bài 1
 
 
 let $a = document.querySelector('.a');
