@@ -1,17 +1,18 @@
-//bài 2 
-
-// let N = prompt('')
-// N = parseInt(N)
-// for (i = 0; i < N; i++) {
-// 	for (j = 0; j <= i; j++) {
-// 		document.writeln(" * ")
-// 	}
-// 	document.writeln("<br/>")
-// }
+let N = prompt('')
+N = parseInt(N)
+for (i = 0; i < N; i++) {
+	for (j = 0; j <= i; j++) {
+		document.writeln(" * ")
+	}
+	document.writeln("<br/>")
+}
 
 
 
-//bài 1 
+let $a = document.querySelector('.a');
+let $b = document.querySelector('.b');
+
+
 
 	let parser = (str) => {
 	let arr = [];
@@ -45,6 +46,7 @@ function kiem_tra_snt(n) {
 			}
 		}
 	}
+
 
 	if (flag == true) {
 		document.write(n + " là số nguyên tố <br/>");
