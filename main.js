@@ -13,31 +13,34 @@
 
 //bài 1
 
+function checkValue() {
+	document.getElementById("result").innerHTML = "";
+	let $a = document.getElementById("a").value;
+	let $b = document.getElementById("b").value;
 
-let $a = document.querySelector('.a');
-let $b = document.querySelector('.b');
-let $btn = document.querySelector('.btn');
-
-
-
-$btn.addEventListener("click", (e) => {
-	console.log(parser($a.value, $b.value));
-	console.log($a.value, $b.value);
-
+	if ((Number.isInteger($a) && Number.isInteger($b)) || $b < $a)
+		return;
+	let arr = [];
+	for (let i = $a; i <= $b; ++i) {
+		if (num(i)) {
+			arr.push(i);
+		}
 	}
-)
-
-
-
-let parser = (a, b) => {
-let arr = [];
-let from = Math.min(a[0]);
-let to = Math.max(b[1]);
-for (let i = from; i <= to; i++) {
-	arr.push(i);
-}
-	return arr;
+	// console.log(arr.toString());
+	document.getElementById("result").innerHTML = arr.toString();
 }
 
-console.log(parser('1', '18'));
-
+function num(n) {
+	let flag = true;
+	if (n < 2) {
+		flag = false;
+	} else {
+		for (let i = 2; i < n - 1; i++) {
+			if (n % i == 0) {
+				flag = false;
+				break;
+			}
+		}
+	}
+	return flag;
+}
