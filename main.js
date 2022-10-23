@@ -13,7 +13,7 @@
 
 //bài 1
 
-function checkValue() {
+function check() {
 	document.getElementById("result").innerHTML = "";
 	let $a = document.getElementById("a").value;
 	let $b = document.getElementById("b").value;
